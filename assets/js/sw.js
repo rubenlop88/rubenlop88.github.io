@@ -28,7 +28,7 @@ const SHELL_CACHE = "shell-8.0.0--v1--sw/";
 const ASSETS_CACHE = "assets--v1--sw/";
 
 // The cache for regular content, which will be invalidated every time you make a new build.
-const CONTENT_CACHE = "content--2018-08-16T19:25:43-04:00--sw/";
+const CONTENT_CACHE = "content--2018-08-16T23:59:06-04:00--sw/";
 
 // A URL search parameter you can add to external assets to cache them in the service worker.
 const CACHE_SEARCH_PARAM = "sw-cache";
@@ -59,7 +59,7 @@ const SHELL_FILES = [
 
 const ASSET_FILES = [
   /**/ "/assets/img/sidebar-bg.jpg" /**/,
-  /**/,
+  /**/ "/assets/img/logo.png" /**/,
   /**/
 ];
 
@@ -244,7 +244,8 @@ async function onFetch(e) {
   // ------
   // Go to network for non-GET request and Google Analytics right away.
   if (
-    request.method !== "GET" /**/
+    request.method !== "GET" /**/ ||
+    request.url.startsWith("https://www.google-analytics.com/collect") /**/
   ) {
     return fetch(request);
   }
