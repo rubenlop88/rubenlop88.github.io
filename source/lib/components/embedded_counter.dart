@@ -6,11 +6,9 @@ import 'package:jaspr_flutter_embed/jaspr_flutter_embed.dart';
 @Import.onWeb('../widgets/counter.dart', show: [#CounterWidget])
 import 'embedded_counter.imports.dart' deferred as counter;
 
+@client
 class EmbeddedCounter extends StatelessComponent {
-  const EmbeddedCounter({this.count = 0, required this.onChange, super.key});
-
-  final int count;
-  final void Function(int) onChange;
+  const EmbeddedCounter({super.key});
 
   @override
   Iterable<Component> build(BuildContext context) sync* {
@@ -26,7 +24,7 @@ class EmbeddedCounter extends StatelessComponent {
       // The [FlutterEmbedView.deferred] component will take care of loading
       // the widget and initializing flutter.
       loadLibrary: counter.loadLibrary(),
-      builder: () => counter.CounterWidget(count: count, onChange: onChange),
+      builder: () => counter.CounterWidget(),
     );
   }
 }

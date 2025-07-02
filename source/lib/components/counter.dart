@@ -1,8 +1,8 @@
 import 'package:jaspr/jaspr.dart';
 
 import '../constants/theme.dart';
-import 'embedded_counter.dart';
 
+@client
 class Counter extends StatefulComponent {
   const Counter({super.key});
 
@@ -30,13 +30,6 @@ class CounterState extends State<Counter> {
         [text('+')],
       ),
     ]);
-
-    yield EmbeddedCounter(
-      count: count,
-      onChange: (value) {
-        setState(() => count = value);
-      },
-    );
   }
 
   @css

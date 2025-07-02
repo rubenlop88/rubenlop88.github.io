@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class CounterWidget extends StatelessWidget {
-  const CounterWidget({this.count = 0, required this.onChange, super.key});
+class CounterWidget extends StatefulWidget {
+  const CounterWidget({super.key});
 
-  final int count;
-  final void Function(int) onChange;
+  @override
+  State<CounterWidget> createState() => _CounterWidgetState();
+}
+
+class _CounterWidgetState extends State<CounterWidget> {
+  int count = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +25,9 @@ class CounterWidget extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.remove),
               onPressed: () {
-                onChange(count - 1);
+                setState(() {
+                  count--;
+                });
               },
             ),
             const SizedBox(width: 5),
@@ -29,14 +35,16 @@ class CounterWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text('Flutter Counter'),
-                Text('$count', style: TextStyle(fontWeight: FontWeight.bold)),
+                Text('${count}', style: TextStyle(fontWeight: FontWeight.bold)),
               ],
             ),
             const SizedBox(width: 5),
             IconButton(
               icon: const Icon(Icons.add),
               onPressed: () {
-                onChange(count + 1);
+                setState(() {
+                  count++;
+                });
               },
             ),
           ],

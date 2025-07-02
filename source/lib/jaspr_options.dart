@@ -5,11 +5,13 @@
 // Generated with jaspr_builder
 
 import 'package:jaspr/jaspr.dart';
-import 'package:source/components/counter.dart' as prefix0;
-import 'package:source/components/header.dart' as prefix1;
-import 'package:source/pages/about.dart' as prefix2;
-import 'package:source/pages/home.dart' as prefix3;
-import 'package:source/app.dart' as prefix4;
+import 'package:jaspr_content/components/_internal/code_block_copy_button.dart'
+    as prefix0;
+import 'package:jaspr_content/components/callout.dart' as prefix1;
+import 'package:jaspr_content/components/code_block.dart' as prefix2;
+import 'package:jaspr_content/components/sidebar_toggle_button.dart' as prefix3;
+import 'package:source/components/counter.dart' as prefix4;
+import 'package:source/components/embedded_counter.dart' as prefix5;
 
 /// Default [JasprOptions] for use with your jaspr project.
 ///
@@ -29,14 +31,24 @@ import 'package:source/app.dart' as prefix4;
 /// ```
 JasprOptions get defaultJasprOptions => JasprOptions(
   clients: {
-    prefix2.About: ClientTarget<prefix2.About>('pages/about'),
+    prefix0.CodeBlockCopyButton: ClientTarget<prefix0.CodeBlockCopyButton>(
+      'jaspr_content:components/_internal/code_block_copy_button',
+    ),
 
-    prefix3.Home: ClientTarget<prefix3.Home>('pages/home'),
+    prefix3.SidebarToggleButton: ClientTarget<prefix3.SidebarToggleButton>(
+      'jaspr_content:components/sidebar_toggle_button',
+    ),
+
+    prefix4.Counter: ClientTarget<prefix4.Counter>('components/counter'),
+
+    prefix5.EmbeddedCounter: ClientTarget<prefix5.EmbeddedCounter>(
+      'components/embedded_counter',
+    ),
   },
   styles: () => [
-    ...prefix0.CounterState.styles,
-    ...prefix1.Header.styles,
-    ...prefix2.About.styles,
-    ...prefix4.App.styles,
+    ...prefix1.Callout.styles,
+    ...prefix2.CodeBlock.styles,
+
+    ...prefix4.CounterState.styles,
   ],
 );
