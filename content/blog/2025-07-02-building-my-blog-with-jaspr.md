@@ -21,13 +21,9 @@ for the first time in my career. I've been writing Android applications since 20
 but I never had a full-time job to do it. In 2022, I got a job as a Flutter
 developer, and even though I had never touched Flutter until then, I knew it
 was something I wanted to learn. What I didn't know was that it would become
-a passion for me.
-
-I'm so happy to be able to work with Flutter that now I even find additional time 
-to report bugs in open source projects and send a few PRs now and then. I also 
-have the chance to work on many interesting problems that other people might be
-facing too. That's what finally convinced me to create this blog, so I can share 
-with others what I've learned.
+a passion for me. I have the chance to work on many interesting problems that 
+other people might be facing too. That's what finally convinced me to create 
+this blog, so I can share with others what I've learned.
 
 # Choosing Jaspr
 
@@ -185,6 +181,13 @@ With everything set up, you can now include the widget in any markdown file like
 ```
 
 You can see the full code of this site in my [GitHub repository](https://github.com/rubenlop88/rubenlop88.github.io)
+
+# What's missing in Jaspr
+
+While Jaspr is a great framework, it still has some limitations compared to using 
+a dedicated blogging platform like WordPress or HashNode. For example, it doesn't 
+have a built-in commenting system or upvoting system. But in my case that's not a 
+problem.
 
 # Conclusion
 
