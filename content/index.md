@@ -1,45 +1,40 @@
-# Welcome to Jaspr Content
+<img src="images/profile.jpg" 
+    alt="Ruben's picture" 
+    class="center circular" 
+    style="width: 200px; height: 200px;">
 
-This is a sample content file. You can add more files here as needed.
 
----
+# Welcome to my personal blog!
 
-All standard **markdown syntax** is supported, including:
+Hi, I'm Ruben, a software engineer from Paraguay with 15+ years of experience doing 
+mobile and backend design and development. I've been a full-time Flutter developer 
+since 2022.
 
-**Lists**:
+I'm passionate about software architecture, I love writing clean and maintainable code,
+and I'm always learning new things. I created this blog to share my experiences with 
+the community, improve my Flutter skills, and hopefully help others along the way.
+You can find me on:
 
-- Item 1
-- Item 2
-  1. Nested item
-  2. Nested item 2
 
-**Blockquotes**:
-
-> This is a blockquote.  
-> It can span multiple lines.
-
-**Code blocks**:
-
-```dart
-void main() {
-  print('Hello, world!');
-}
-```
-
-**Inline code**: Use `print('Hello, world!')` to display a message.
-
-**Links**: [Visit Jaspr](https://jaspr.dev)
-
-**Images**: ![Sample Image](https://placehold.co/600x400)
-
-**Tables**:
-
-| Syntax    | Description |
-|-----------|-------------|
-| Header 1  | Content 1   |
-| Header 2  | Content 2   |
-
-**Custom Component**
-
-<Counter></Counter>
-<EmbeddedCounter></EmbeddedCounter>
+<div class="row center">
+  <div class="column">
+    <a href="https://github.com/rubenlop88/">
+      <img src="svg/square-github-brands.svg" alt="GitHub" width="48" height="48">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://www.linkedin.com/in/rubenlop88/">
+      <img src="svg/linkedin-brands-solid.svg" alt="LinkedIn" width="48" height="48">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://x.com/rubenlop88">
+      <img src="svg/square-x-twitter-brands-solid.svg" alt="Twitter" width="48" height="48">
+    </a>
+  </div>
+  <div class="column">
+    <a href="https://bsky.app/profile/rubenlop88.bsky.social">
+      <img src="svg/square-bluesky-brands.svg" alt="BlueSky" width="48" height="48">
+    </a>
+  </div>
+</div>

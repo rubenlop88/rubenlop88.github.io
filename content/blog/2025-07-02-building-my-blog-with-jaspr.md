@@ -3,7 +3,7 @@ title: "Building my blog with Jaspr"
 keywords: [ "jaspr", "blog" ]
 author: "Ruben Lopez"
 date: "02 July 2025"
-readTime: "1 min"
+readTime: "5 min"
 authorImage: https://avatars.githubusercontent.com/u/810004?s=96&v=4
 tags: [ "Dart", "Jaspr", "Blog" ]
 layout: blog
