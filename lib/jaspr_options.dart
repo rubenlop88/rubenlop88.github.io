@@ -11,8 +11,7 @@ import 'package:jaspr_content/components/callout.dart' as prefix1;
 import 'package:jaspr_content/components/code_block.dart' as prefix2;
 import 'package:jaspr_content/components/drop_cap.dart' as prefix3;
 import 'package:jaspr_content/components/sidebar_toggle_button.dart' as prefix4;
-import 'package:jaspr_content/components/theme_toggle.dart' as prefix5;
-import 'package:source/components/embedded_counter.dart' as prefix6;
+import 'package:source/components/embedded_counter.dart' as prefix5;
 
 /// Default [JasprOptions] for use with your jaspr project.
 ///
@@ -40,11 +39,7 @@ JasprOptions get defaultJasprOptions => JasprOptions(
       'jaspr_content:components/sidebar_toggle_button',
     ),
 
-    prefix5.ThemeToggle: ClientTarget<prefix5.ThemeToggle>(
-      'jaspr_content:components/theme_toggle',
-    ),
-
-    prefix6.EmbeddedCounter: ClientTarget<prefix6.EmbeddedCounter>(
+    prefix5.EmbeddedCounter: ClientTarget<prefix5.EmbeddedCounter>(
       'components/embedded_counter',
     ),
   },
@@ -52,7 +47,5 @@ JasprOptions get defaultJasprOptions => JasprOptions(
     ...prefix1.Callout.styles,
     ...prefix2.CodeBlock.styles,
     ...prefix3.DropCap.styles,
-
-    ...prefix5.ThemeToggleState.styles,
   ],
 );

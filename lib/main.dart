@@ -2,7 +2,6 @@ import 'package:jaspr/server.dart';
 import 'package:jaspr_content/components/callout.dart';
 import 'package:jaspr_content/components/code_block.dart';
 import 'package:jaspr_content/components/drop_cap.dart';
-import 'package:jaspr_content/components/theme_toggle.dart';
 import 'package:jaspr_content/jaspr_content.dart';
 import 'package:source/components/embedded_counter.dart';
 
@@ -40,7 +39,6 @@ void main() {
             header: Header(
               title: 'Ruben Lopez\'s Flutter Blog',
               logo: 'images/logo.png',
-              items: [ThemeToggle()],
             ),
             sidebar: Sidebar(
               groups: [
@@ -52,6 +50,10 @@ void main() {
                 SidebarGroup(
                   title: 'Posts',
                   links: [
+                    SidebarLink(
+                      text: 'Implementing popUntil in GoRouter',
+                      href: '/blog/2025-07-03-go-router-pop-until',
+                    ),
                     SidebarLink(
                       text: 'Building my blog with Jaspr',
                       href: '/blog/2025-07-02-building-my-blog-with-jaspr',
@@ -65,7 +67,6 @@ void main() {
             header: Header(
               title: 'Ruben Lopez\'s Flutter Blog',
               logo: 'images/logo.png',
-              items: [ThemeToggle()],
             ),
           ),
         ],
