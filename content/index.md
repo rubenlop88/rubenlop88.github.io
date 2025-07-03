@@ -15,6 +15,8 @@ and I'm always learning new things. I created this blog to share my experiences 
 the community, improve my Flutter skills, and hopefully help others along the way.
 You can find me on:
 
+Most of the posts will also be available in my [HashNode](https://blog.rubenlop88.dev/) page
+where you can leave comments and subscribe to my blog.
 
 <div class="row center">
   <div class="column">
