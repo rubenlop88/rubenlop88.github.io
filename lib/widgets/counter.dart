@@ -24,11 +24,7 @@ class _CounterWidgetState extends State<CounterWidget> {
           children: [
             IconButton(
               icon: const Icon(Icons.remove),
-              onPressed: () {
-                setState(() {
-                  count--;
-                });
-              },
+              onPressed: () => setState(() => count--),
             ),
             const SizedBox(width: 5),
             Column(
@@ -41,11 +37,7 @@ class _CounterWidgetState extends State<CounterWidget> {
             const SizedBox(width: 5),
             IconButton(
               icon: const Icon(Icons.add),
-              onPressed: () {
-                setState(() {
-                  count++;
-                });
-              },
+              onPressed: () => setState(() => count++),
             ),
           ],
         ),
