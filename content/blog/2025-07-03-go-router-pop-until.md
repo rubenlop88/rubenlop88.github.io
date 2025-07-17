@@ -79,7 +79,7 @@ extension ContextExtension on BuildContext {
   void popUntil(bool Function(GoRoute route) predicate) {
     final delegate = GoRouter.of(this).routerDelegate;
     var config = delegate.currentConfiguration;
-    while (!predicate(config.last.route) && config.routes.length > 1) {
+    while (!predicate(config.last.route) && config.routes.length > 2) {
       config = config.remove(config.last);
     }
     delegate.setNewRoutePath(config);
